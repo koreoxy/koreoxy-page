@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koreoxy</title>
 
+    <!-- FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,20 +20,35 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <div class="container wrapper navbar">
-      <a href="#" class="navbar-logo">Koreoxy</a>
+    <div class="container wrapper">
+      <!-- NAVBAR -->
+      <div class="container-navbar">
+        <div class="navbar-social">
+          <a href="https://www.instagram.com/ifulufi/">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@1sh1sh">
+            <i data-feather="youtube"></i>
+          </a>
+          <a href="https://github.com/koreoxy">
+            <i data-feather="github"></i>
+          </a>
+        </div>
 
-      <div class="navbar-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Blog</a>
-      </div>
+        <div class="navbar-logo">Koreoxy</div>
 
-      <div class="navbar-extra">
-        <a href="">Menu</a>
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Blog</a>
+        </div>
       </div>
     </div>
+
+    <!-- SCRIPT FEATHER ICON -->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

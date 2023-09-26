@@ -36,6 +36,40 @@ a {
   padding-right: 80px;
 }
 
+/* NAVBAR */
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.container-navbar .navbar-social {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.container-navbar .navbar-social a {
+  width: 24px;
+  height: 24px;
+}
+
+.container-navbar .navbar-logo {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container-navbar .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  font-size: 20px;
+}
+
 /* Breakpoint media querie */
 /* PC */
 @media screen and (max-width: 1536px) {
@@ -48,6 +82,16 @@ a {
 @media screen and (max-width: 1280px) {
   .wrapper {
     max-width: 1024px;
+  }
+
+  /* NAVBAR */
+  .container-navbar .navbar-logo {
+    font-size: 32px;
+  }
+
+  .container-navbar .navbar-links {
+    font-size: 18px;
+    gap: 15px;
   }
 }
 
