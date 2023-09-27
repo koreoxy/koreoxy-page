@@ -26,6 +26,10 @@ a {
 .container {
   min-height: 100vh;
   color: var(--textColor);
+  border: 1rem solid;
+  border-color: var(--textColor);
+  border-top: none;
+  border-bottom: none;
 }
 
 .wrapper {
@@ -42,6 +46,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  border-bottom: 0.1rem solid;
 }
 
 .container-navbar .navbar-social {
@@ -70,6 +75,29 @@ a {
   font-size: 20px;
 }
 
+/* HERO SECTION */
+.container-hero .hero {
+  display: flex;
+}
+
+.container-hero .hero {
+}
+
+.container-hero .hero .hero-text {
+  margin-top: 5rem;
+}
+
+.container-hero .hero .hero-text h1 {
+  font-size: 45px;
+}
+
+.container-hero .hero .hero-text p {
+  font-size: 25px;
+}
+
+.container-hero .hero .hero-img {
+  margin-top: 2rem;
+}
 /* Breakpoint media querie */
 /* PC */
 @media screen and (max-width: 1536px) {
