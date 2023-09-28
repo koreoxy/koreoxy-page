@@ -3,6 +3,7 @@
   --textColor: #ddd;
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
+  --blueDark: #144272;
 }
 
 * {
@@ -78,6 +79,7 @@ a {
 /* HERO SECTION */
 .container-hero .hero {
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .container-hero .hero {
@@ -97,6 +99,74 @@ a {
 
 .container-hero .hero .hero-img {
   margin-top: 2rem;
+}
+
+/* PROJECT */
+.container-project h1 {
+  font-size: 2.2rem;
+  background-color: var(--softBg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-project .project-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-project .project-row .project-card {
+  background-color: var(--softBg);
+  width: 100%;
+  font-size: 1.1rem;
+  flex: 1;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+  margin: 12px;
+  padding: 12px;
+}
+
+.container-project .project-row .project-card h4 {
+  font-size: 25px;
+}
+
+.container-project .project-row .project-card p {
+  margin-top: 2rem;
+  font-size: 20px;
+  color: var(--softTextColor);
+}
+
+.container-project .project-row .project-card span {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 15px;
+  background-color: var(--bg);
+  padding: 5px;
+  color: var(--softTextColor);
+}
+
+.container-project .project-row .project-card::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: var(--textColor);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.5s all;
+}
+
+.container-project .project-row .project-card:hover::before {
+  width: 100%;
+}
+
+.container-project .project-row .project-card:hover h4,
+.container-project .project-row .project-card:hover p {
+  color: var(--bg);
+}
+.container-project .project-row .project-card img {
+  width: 100%;
 }
 /* Breakpoint media querie */
 /* PC */
