@@ -168,6 +168,19 @@ a {
 .container-project .project-row .project-card img {
   width: 100%;
 }
+
+/* FOOTER */
+footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  color: var(--softTextColor);
+}
+
 /* Breakpoint media querie */
 /* PC */
 @media screen and (max-width: 1536px) {
