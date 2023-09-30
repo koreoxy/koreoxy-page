@@ -142,6 +142,10 @@ a {
   list-style-type: none;
 }
 
+.skillset .grid .border .title-point .point li {
+  text-align: end;
+}
+
 /* FOOTER */
 footer {
   margin-top: 4rem;
