@@ -1,0 +1,166 @@
+:root {
+  --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6;
+  --blueDark: #144272;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  color: var(--textColor);
+  border-top: none;
+  border-bottom: none;
+}
+
+.wrapper {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* NAVBAR */
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  border-bottom: 0.1rem solid;
+}
+
+.container-navbar .navbar-social {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.container-navbar .navbar-social a {
+  width: 24px;
+  height: 24px;
+}
+
+.container-navbar .navbar-logo {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container-navbar .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  font-size: 20px;
+}
+
+/* CUSTOME FEDORA */
+.blog {
+  margin-top: 3rem;
+}
+
+.blog .heading {
+  margin-bottom: 3rem;
+}
+
+.blog .heading > p {
+  color: var(--softTextColor);
+}
+
+.blog .content-blog h3 {
+  margin-bottom: 1rem;
+}
+
+.blog .content-blog ul {
+  color: var(--softTextColor);
+  margin-bottom: 2rem;
+}
+
+.blog .content-blog li {
+  margin-left: 2rem;
+}
+
+.blog .content-blog img {
+  margin-top: 0.55rem;
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  color: var(--softTextColor);
+}
+
+/* Breakpoint media querie */
+/* PC */
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+
+/* LAPTOP */
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  /* NAVBAR */
+  .container-navbar .navbar-logo {
+    font-size: 32px;
+  }
+
+  .container-navbar .navbar-links {
+    font-size: 18px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+
+/* PHONE AND HP */
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 475px;
+  }
+}
