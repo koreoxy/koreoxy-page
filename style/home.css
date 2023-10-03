@@ -75,6 +75,10 @@ a {
 }
 
 /* HERO SECTION */
+.typewrite > .wrap {
+  border-right: 0.08em solid #fff;
+}
+
 .container-hero .hero {
   display: flex;
   margin-bottom: 5rem;
