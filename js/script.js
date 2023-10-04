@@ -1,3 +1,19 @@
+// Toggle class active untuk hamburger menu
+const navbarNav = document.querySelector('.navbar-nav');
+
+document.querySelector('#hamburger-menu').onclick = () => {
+  navbarNav.classList.toggle('active');
+};
+
+// KLIK DI luar sidebar untuk menghilangkan nav
+const hamburger = document.querySelector('#hamburger-menu');
+
+document.addEventListener('click', function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove('active');
+  }
+});
+
 //Animate Typewriter
 textType = function (el, toRotate, period) {
   this.toRotate = toRotate;
