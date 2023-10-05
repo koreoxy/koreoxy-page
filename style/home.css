@@ -287,7 +287,7 @@ footer {
   .navbar .navbar-logo img {
     padding-top: 1rem;
     width: auto;
-    height: 50px;
+    height: 60px;
   }
 
   #hamburger-menu {
@@ -342,7 +342,7 @@ footer {
 
   /* HERO SECTION */
   .container-hero {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   .container-hero .hero .hero-img {
     display: none;
@@ -353,8 +353,13 @@ footer {
     background-color: var(--softBg);
   }
 
+  .project-row .col .title {
+    text-align: center;
+  }
+
   .project-row .col .desc {
     height: 150px;
+    text-align: center;
   }
 
   .project-row .col span {
@@ -381,5 +386,9 @@ footer {
   /* PROJECT */
   .container-project h1 {
     font-size: 1.5rem;
+  }
+
+  .project-row .col .title {
+    margin-bottom: 1rem;
   }
 }
