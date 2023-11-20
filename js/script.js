@@ -68,3 +68,8 @@ window.onload = function () {
     }
   }
 };
+
+//CRUD BLOG
+let id = null;
+
+const input = () => {};
